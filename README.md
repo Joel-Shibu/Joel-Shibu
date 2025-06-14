@@ -1,16 +1,27 @@
-## Hi there 👋
+# Hi, I'm Joel Shibu 👋
 
-<!--
-**Joel-Shibu/Joel-Shibu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 🚀 AI/ML Developer · Python Automation Specialist · Building Scalable, Intelligent Solutions
 
-Here are some ideas to get you started:
+### 🌟 About Me
+Passionate about creating intelligent AI/ML systems and automating workflows with Python.  
+I enjoy solving complex problems with clean, efficient solutions and collaborating on innovative projects.  
+Currently open to internships and collaborative projects in advanced tech and innovation!
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+### 🛠 Skills & Tools
+- **Programming Languages**: Python, Node.js  
+- **Specializations**: AI/ML, Automation  
+- **Frameworks**: FastAPI, Robotics Frameworks  
+
+---
+
+### 🌐 Connect with Me
+- 📧 Email: [joelshibu@email.com](mailto:joelshibu@email.com)  
+- 🔗 LinkedIn: [Joel Shibu](https://linkedin.com/in/joelshibu)  
+
+---
+
+### 💡 Let's Innovate Together!
+Feel free to reach out for collaborations, internships, or just to discuss exciting tech ideas.  
+I'm always eager to learn, grow, and contribute to the tech community.  
