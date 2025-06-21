@@ -30,8 +30,8 @@ Currently open to **internships, collaborations, and cutting-edge tech ventures*
 
 ### 🌐 Connect With Me
 
-- 📧 [Email](joelshibuadoor@email.com)
-- 🔗 [LinkedIn](linkedin.com/in/joel-shibu-b6bb54352)
+- 📧 [Email](mailto:joelshibuadoor@email.com)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/joel-shibu-b6bb54352)
 
 ---
 
