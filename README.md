@@ -1,27 +1,41 @@
-# Hi, I'm Joel Shibu 👋
+# 👋 Hi, I'm Joel Shibu
 
-## 🚀 AI/ML Developer · Python Automation Specialist · Building Scalable, Intelligent Solutions
+## 🚀 AI/ML Developer | Python Automation Specialist | Building Scalable, Intelligent Solutions
+
+---
 
 ### 🌟 About Me
-Passionate about creating intelligent AI/ML systems and automating workflows with Python.  
-I enjoy solving complex problems with clean, efficient solutions and collaborating on innovative projects.  
-Currently open to internships and collaborative projects in advanced tech and innovation!
+
+I’m passionate about designing intelligent AI/ML systems and streamlining workflows through Python automation.  
+I enjoy tackling challenging problems with clean, efficient solutions and collaborating on innovative projects.  
+Currently open to **internships, collaborations, and cutting-edge tech ventures**.
 
 ---
 
-### 🛠 Skills & Tools
-- **Programming Languages**: Python, Node.js  
-- **Specializations**: AI/ML, Automation  
-- **Frameworks**: FastAPI, Robotics Frameworks  
+### 🛠️ Tech Stack & Tools
+
+- **Languages:** Python, Node.js  
+- **Specialties:** Machine Learning, Automation, Robotics  
+- **Frameworks:** FastAPI, ROS, Custom Robotics Frameworks  
 
 ---
 
-### 🌐 Connect with Me
-- 📧 Email: [joelshibu@email.com](mailto:joelshibu@email.com)  
-- 🔗 LinkedIn: [Joel Shibu](https://linkedin.com/in/joelshibu)  
+### 📊 GitHub Stats
+
+![Joel's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Joel-Shibu&show_icons=true&theme=github_dark&hide_border=true&count_private=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Joel-Shibu&layout=compact&theme=github_dark&hide_border=true)
 
 ---
 
-### 💡 Let's Innovate Together!
-Feel free to reach out for collaborations, internships, or just to discuss exciting tech ideas.  
-I'm always eager to learn, grow, and contribute to the tech community.  
+### 🌐 Connect With Me
+
+- 📧 [Email](joelshibuadoor@email.com)
+- 🔗 [LinkedIn](https://link)
+
+---
+
+### 💡 Let’s Build the Future Together
+
+Open to opportunities, idea exchanges, and collaborative projects.  
+Let’s connect and innovate! 🚀
