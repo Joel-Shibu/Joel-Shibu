@@ -66,9 +66,9 @@ https://github.com/MedTechHealth/RESP-AI
 
 <p align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Joel-Shibu&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&cache_seconds=86400"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=Joel-Shibu&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&cache_seconds=86400" />
 
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Joel-Shibu&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&cache_seconds=86400"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Joel-Shibu&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&cache_seconds=86400" />
 
 </p>
 
@@ -78,7 +78,7 @@ https://github.com/MedTechHealth/RESP-AI
 
 <p align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Joel-Shibu&theme=tokyo-night&hide_border=true"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Joel-Shibu&theme=tokyo-night&hide_border=true" />
 
 </p>
 
