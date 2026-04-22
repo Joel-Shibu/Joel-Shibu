@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import BootSequenceLoader from "@/components/BootSequenceLoader";
 import CanvasContainer from "@/components/CanvasContainer";
 import ProjectCard from "@/components/ProjectCard";
+import ContactSection from "@/components/ContactSection";
 
 export default function Home() {
   const [bootComplete, setBootComplete] = useState(false);
@@ -68,6 +69,9 @@ export default function Home() {
           <div className="h-screen" /> {/* Spacer for final camera zoom out */}
         </div>
       )}
+
+      {/* Final Contact Section */}
+      {bootComplete && <ContactSection />}
     </main>
   );
 }
