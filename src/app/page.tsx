@@ -5,6 +5,7 @@ import { registerGSAP } from "@/lib/animations/gsap-setup";
 import BootSequenceLoader from "@/components/BootSequenceLoader";
 import HeroSection from "@/components/sections/HeroSection";
 import MissionSelect from "@/components/sections/MissionSelect";
+import SkillsSection from "@/components/sections/SkillsSection";
 
 export default function Home() {
   const [bootComplete, setBootComplete] = useState(false);
@@ -29,13 +30,7 @@ export default function Home() {
             <MissionSelect />
 
             {/* More sections will be added here */}
-            <section className="min-h-[50vh] flex items-center justify-center border-t border-white/5">
-              <p className="font-mono text-muted">[MORE MISSIONS COMING SOON]</p>
-            </section>
-
-            <section className="min-h-[50vh] flex items-center justify-center border-t border-white/5">
-              <p className="font-mono text-muted">[SKILLS DATA LOADING]</p>
-            </section>
+            <SkillsSection />
 
             <section className="min-h-[50vh] flex items-center justify-center border-t border-white/5">
               <p className="font-mono text-muted">[ABOUT DATA LOADING]</p>
