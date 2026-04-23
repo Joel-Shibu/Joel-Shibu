@@ -65,13 +65,13 @@ export function MissionCard({
         rotateX,
         rotateY,
         transformPerspective: 1000,
-        transformStyle: "preserve-3d"
+        transformStyle: "preserve-3d",
+        borderColor: color + "30"
       }}
       className={cn(
         "relative group bg-white/5 border border-white/10 rounded-xl p-6 cursor-pointer overflow-hidden",
         className
       )}
-      style={{ borderColor: color + "30" }}
     >
       <div 
         className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
