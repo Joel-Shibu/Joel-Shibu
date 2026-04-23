@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { registerGSAP } from "@/lib/animations/gsap-setup";
 import BootSequenceLoader from "@/components/BootSequenceLoader";
 import HeroSection from "@/components/sections/HeroSection";
+import MissionSelect from "@/components/sections/MissionSelect";
 
 export default function Home() {
   const [bootComplete, setBootComplete] = useState(false);
@@ -25,20 +26,7 @@ export default function Home() {
           <div id="smooth-content">
             <HeroSection />
             
-            {/* Placeholder for Mission Select */}
-            <section 
-              id="missions" 
-              className="min-h-screen flex items-center justify-center border-t border-white/5 bg-black/40"
-            >
-              <div className="text-center">
-                <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
-                  MISSION SELECT
-                </h2>
-                <p className="font-mono text-muted">
-                  [SELECT A MISSION TO BEGIN]
-                </p>
-              </div>
-            </section>
+            <MissionSelect />
 
             {/* More sections will be added here */}
             <section className="min-h-[50vh] flex items-center justify-center border-t border-white/5">
