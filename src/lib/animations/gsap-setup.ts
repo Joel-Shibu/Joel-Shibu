@@ -6,6 +6,6 @@ import { useGSAP } from "@gsap/react";
 
 export function registerGSAP() {
   if (typeof window !== "undefined") {
-    gsap.registerPlugin(ScrollTrigger, useGSAP);
+    gsap.registerPlugin(ScrollTrigger);
   }
 }
