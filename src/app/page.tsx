@@ -1,77 +1,64 @@
 "use client";
 
-import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { registerGSAP } from "@/lib/animations/gsap-setup";
 import BootSequenceLoader from "@/components/BootSequenceLoader";
-import CanvasContainer from "@/components/CanvasContainer";
-import ProjectCard from "@/components/ProjectCard";
-import ContactSection from "@/components/ContactSection";
+import HeroSection from "@/components/sections/HeroSection";
 
 export default function Home() {
   const [bootComplete, setBootComplete] = useState(false);
 
+  useEffect(() => {
+    registerGSAP();
+  }, []);
+
   return (
-    <main className="relative bg-background min-h-screen">
-      <AnimatePresence>
-        {!bootComplete && <BootSequenceLoader onComplete={() => setBootComplete(true)} />}
-      </AnimatePresence>
-
-      {/* Fixed 3D Background */}
-      {bootComplete && <CanvasContainer />}
-
-      {/* Scrollable Overlay Area */}
-      {bootComplete && (
-        <div id="scroll-container" className="relative z-10 w-full h-[500vh]">
-          {/* Hero Section - 100vh */}
-          <section className="h-screen w-full flex flex-col items-center justify-center pointer-events-none">
-            <motion.h1 
-              initial={{ opacity: 0, y: 50, scale: 0.9 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ delay: 0.5, duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="font-display text-6xl md:text-9xl font-black tracking-tighter text-white"
-            >
-              JOEL SHIBU
-            </motion.h1>
-            <motion.p
-               initial={{ opacity: 0 }}
-               animate={{ opacity: 1 }}
-               transition={{ delay: 1.2, duration: 1 }}
-               className="font-mono text-neural-cyan tracking-widest mt-4"
-            >
-              AI SYSTEMS & ROBOTICS ENGINEER
-            </motion.p>
-          </section>
-
-          {/* Project 1 - 100vh spacer before it */}
-          <section className="h-[150vh] w-full flex items-center justify-center px-4">
-            <div className="sticky top-1/2 -translate-y-1/2">
-              <ProjectCard 
-                title="NeuroSight" 
-                description="AI-powered medical intelligence system for healthcare data analysis. Built to process massive datasets rapidly using advanced deep learning architectures."
-                tech={["Python", "PyTorch", "FastAPI", "React"]}
-                repoUrl="https://github.com/MedBotix/NeuroSight"
-              />
-            </div>
-          </section>
-
-          {/* Project 2 */}
-          <section className="h-[150vh] w-full flex items-center justify-center px-4">
-            <div className="sticky top-1/2 -translate-y-1/2">
-              <ProjectCard 
-                title="RESP-AI" 
-                description="AI respiratory health monitoring platform designed for intelligent breathing pattern analysis using sensor telemetry."
-                tech={["ROS", "C++", "Python", "TensorFlow"]}
-                repoUrl="https://github.com/MedTechHealth/RESP-AI"
-              />
-            </div>
-          </section>
-          
-          <div className="h-screen" /> {/* Spacer for final camera zoom out */}
-        </div>
+    <main className="relative bg-background min-h-screen selection:bg-primary/30 selection:text-primary">
+      {/* Boot Sequence */}
+      {(!bootComplete) && (
+        <BootSequenceLoader onComplete={() => setBootComplete(true)} />
       )}
 
-      {/* Final Contact Section */}
-      {bootComplete && <ContactSection />}
+      {/* Main Content */}
+      {bootComplete && (
+        <div id="smooth-wrapper" className="relative z-10 w-full">
+          <div id="smooth-content">
+            <HeroSection />
+            
+            {/* Placeholder for Mission Select */}
+            <section 
+              id="missions" 
+              className="min-h-screen flex items-center justify-center border-t border-white/5 bg-black/40"
+            >
+              <div className="text-center">
+                <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
+                  MISSION SELECT
+                </h2>
+                <p className="font-mono text-muted">
+                  [SELECT A MISSION TO BEGIN]
+                </p>
+              </div>
+            </section>
+
+            {/* More sections will be added here */}
+            <section className="min-h-[50vh] flex items-center justify-center border-t border-white/5">
+              <p className="font-mono text-muted">[MORE MISSIONS COMING SOON]</p>
+            </section>
+
+            <section className="min-h-[50vh] flex items-center justify-center border-t border-white/5">
+              <p className="font-mono text-muted">[SKILLS DATA LOADING]</p>
+            </section>
+
+            <section className="min-h-[50vh] flex items-center justify-center border-t border-white/5">
+              <p className="font-mono text-muted">[ABOUT DATA LOADING]</p>
+            </section>
+
+            <section className="min-h-[50vh] flex items-center justify-center border-t border-white/5">
+              <p className="font-mono text-muted">[CONTACT LINK ESTABLISHING]</p>
+            </section>
+          </div>
+        </div>
+      )}
     </main>
   );
 }
