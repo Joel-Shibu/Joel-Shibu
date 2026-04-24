@@ -1,3 +1,11 @@
+/**
+ * 3D Neural Brain Particle System
+ * 
+ * Renders thousands of glowing particles in a spherical formation
+ * that rotate over time, creating a living neural network effect.
+ * 
+ * @param count - Number of particles to render (default: 2000)
+ */
 "use client";
 
 import { useRef, useState } from "react";

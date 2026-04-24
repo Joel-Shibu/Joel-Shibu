@@ -1,186 +1,139 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-const skillTree = {
-  ultimate: {
-    name: "LLM ORCHESTRATION",
-    color: "#FFD700",
-    description: "Multi-agent systems & tool orchestration"
+const skillCategories = [
+  {
+    title: "AGENTIC AI",
+    subtitle: "MULTI-AGENT SYSTEMS",
+    skills: ["Prompt Engineering", "LLM Orchestration", "Tool Use", "Function Calling"],
+    color: "#00FF88",
   },
-  tiers: [
-    {
-      name: "AGENTIC AI",
-      color: "#00FF88",
-      skills: [
-        { name: "Prompt Engineering", level: 90, description: "Vertex AI certified" },
-        { name: "Multi-Agent Systems", level: 85, description: "LLM orchestration" },
-        { name: "Tool Use", level: 80, description: "Function calling" }
-      ]
-    },
-    {
-      name: "HEALTHCARE ML",
-      color: "#00D4FF",
-      skills: [
-        { name: "TensorFlow.js", level: 92, description: "Browser ML" },
-        { name: "CNNs", level: 88, description: "Deep learning" },
-        { name: "On-Device Inference", level: 85, description: "Privacy-first" }
-      ]
-    },
-    {
-      name: "AUTONOMOUS SYS",
-      color: "#FF6B35",
-      skills: [
-        { name: "ROS", level: 75, description: "Robot OS" },
-        { name: "IoT Integration", level: 82, description: "ESP32, sensors" },
-        { name: "Computer Vision", level: 80, description: "OpenCV" }
-      ]
-    }
-  ],
-  production: [
-    { name: "Docker", level: 90 },
-    { name: "FastAPI", level: 88 },
-    { name: "WebSocket", level: 85 },
-    { name: "Real-time ML", level: 82 },
-    { name: "React", level: 88 },
-    { name: "Flutter", level: 80 },
-    { name: "GCP", level: 78 },
-    { name: "CI/CD", level: 85 }
-  ]
-};
+  {
+    title: "HEALTHCARE ML",
+    subtitle: "ON-DEVICE INFERENCE",
+    skills: ["TensorFlow.js", "CNNs", "Privacy-First ML", "Deep Learning"],
+    color: "#00D4FF",
+  },
+  {
+    title: "AUTONOMOUS",
+    subtitle: "ROBOTICS & VISION",
+    skills: ["ROS", "IoT Integration", "Computer Vision", "OpenCV", "ESP32"],
+    color: "#FF6B35",
+  }
+];
 
 export default function SkillsSection() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Parallax background
+    gsap.to(imageRef.current, {
+      yPercent: 30,
+      ease: "none",
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+      }
+    });
+
+    // Content fade in
+    gsap.fromTo(contentRef.current, 
+      { opacity: 0, y: 100 },
+      { 
+        opacity: 1, 
+        y: 0, 
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top center",
+          end: "center center",
+          scrub: 1,
+        }
+      }
+    );
+
+  }, { scope: containerRef });
+
   return (
-    <section id="skills" className="min-h-screen w-full py-24 px-4 md:px-8 bg-black/40">
-      <div className="max-w-6xl mx-auto">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
-            SKILLS UNLOCKED
-          </h2>
-          <p className="font-mono text-muted text-sm">
-            [ ABILITY GRID - LEVEL UP YOUR KNOWLEDGE ]
+    <section ref={containerRef} className="relative w-full min-h-screen bg-black overflow-hidden flex items-center py-32">
+      {/* Background Image Parallax Container */}
+      <div className="absolute inset-0 w-full h-[130%] -top-[15%] pointer-events-none">
+        <img 
+          ref={imageRef}
+          src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2500&auto=format&fit=crop" 
+          alt="AI Circuitry" 
+          className="w-full h-full object-cover grayscale opacity-30 object-[50%_30%]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black" />
+      </div>
+
+      {/* Content */}
+      <div ref={contentRef} className="relative z-10 w-full max-w-7xl mx-auto px-8 md:px-12">
+        <div className="mb-20">
+          <p className="font-mono text-sm tracking-[0.3em] text-white/50 mb-4">
+            [ CAPABILITIES ]
           </p>
-        </motion.div>
+          <h2 className="font-display text-5xl md:text-7xl lg:text-8xl font-black text-white uppercase tracking-tighter leading-none">
+            TECHNICAL<br/>ARSENAL
+          </h2>
+        </div>
 
-        {/* Ultimate Skill */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="flex justify-center mb-16"
-        >
-          <div 
-            className="relative px-8 py-4 rounded-full border-2"
-            style={{ 
-              background: `linear-gradient(135deg, ${skillTree.ultimate.color}20, transparent)`,
-              borderColor: skillTree.ultimate.color,
-              boxShadow: `0 0 30px ${skillTree.ultimate.color}40`
-            }}
-          >
-            <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-2 bg-black">
-              <span className="text-xs font-mono text-yellow-400">[ ULTIMATE ]</span>
-            </div>
-            <h3 className="text-xl font-bold text-white">
-              {skillTree.ultimate.name}
-            </h3>
-            <p className="text-xs text-center text-muted mt-1">
-              {skillTree.ultimate.description}
-            </p>
-          </div>
-        </motion.div>
-
-        {/* Skill Tiers */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          {skillTree.tiers.map((tier, tierIndex) => (
-            <motion.div
-              key={tier.name}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: tierIndex * 0.1 }}
-              viewport={{ once: true }}
-            >
-              {/* Tier Header */}
-              <div 
-                className="text-center mb-6 pb-4 border-b"
-                style={{ borderColor: tier.color + "40" }}
-              >
-                <h3 
-                  className="font-display text-xl font-bold"
-                  style={{ color: tier.color }}
-                >
-                  {tier.name}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+          {skillCategories.map((category, idx) => (
+            <div key={idx} className="relative group">
+              <div className="absolute -inset-4 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg blur-lg" />
+              <div className="relative">
+                <div 
+                  className="w-12 h-1 mb-6 transition-all duration-500 group-hover:w-full"
+                  style={{ backgroundColor: category.color }}
+                />
+                <h3 className="font-display text-3xl font-bold text-white mb-2 uppercase tracking-tight">
+                  {category.title}
                 </h3>
-              </div>
-
-              {/* Skills */}
-              <div className="space-y-4">
-                {tier.skills.map((skill, skillIndex) => (
-                  <motion.div
-                    key={skill.name}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.4, delay: tierIndex * 0.1 + skillIndex * 0.05 }}
-                    viewport={{ once: true }}
-                    className="relative"
-                  >
-                    <div className="flex justify-between items-center mb-1">
-                      <span className="text-sm text-white">{skill.name}</span>
-                      <span className="text-xs font-mono" style={{ color: tier.color }}>
-                        {skill.level}%
+                <p className="font-mono text-xs tracking-widest text-white/50 mb-8 uppercase">
+                  {category.subtitle}
+                </p>
+                
+                <div className="space-y-4">
+                  {category.skills.map((skill, sIdx) => (
+                    <div key={sIdx} className="flex items-center gap-4 group/skill">
+                      <div className="w-1.5 h-1.5 rounded-full bg-white/20 group-hover/skill:scale-150 transition-all duration-300" style={{ backgroundColor: category.color }} />
+                      <span className="font-mono text-sm text-white/80 group-hover/skill:text-white transition-colors">
+                        {skill}
                       </span>
                     </div>
-                    <div className="h-2 bg-white/10 rounded-full overflow-hidden">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        transition={{ duration: 0.8, delay: tierIndex * 0.1 + skillIndex * 0.05 }}
-                        viewport={{ once: true }}
-                        className="h-full rounded-full"
-                        style={{ background: tier.color }}
-                      />
-                    </div>
-                    <p className="text-[10px] text-muted mt-1">{skill.description}</p>
-                  </motion.div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
-        {/* Production Skills Grid */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          viewport={{ once: true }}
-        >
-          <h3 className="font-mono text-xs text-muted text-center mb-6">
-            [ PRODUCTION TOOLS ]
-          </h3>
-          <div className="flex flex-wrap justify-center gap-3">
-            {skillTree.production.map((skill, i) => (
-              <motion.div
-                key={skill.name}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.3, delay: 0.4 + i * 0.03 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.1 }}
-                className="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-sm text-white/80 hover:text-primary hover:border-primary/50 transition-colors cursor-default"
-              >
-                {skill.name}
-              </motion.div>
+        {/* Production Stack */}
+        <div className="mt-32 pt-16 border-t border-white/10">
+          <p className="font-mono text-xs tracking-[0.2em] text-white/40 mb-8 text-center">
+            PRODUCTION ENVIRONMENT STACK
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 md:gap-8">
+            {["Docker", "FastAPI", "React", "GCP", "CI/CD", "WebSocket"].map((tech) => (
+              <span key={tech} className="font-mono text-sm md:text-base text-white/60 px-6 py-3 border border-white/10 rounded-full hover:border-white/50 hover:text-white transition-all cursor-default">
+                {tech}
+              </span>
             ))}
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

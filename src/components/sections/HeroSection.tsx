@@ -1,127 +1,93 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { InteractiveGridPattern } from "@/components/ui/interactive-grid-pattern";
-import { Particles } from "@/components/ui/particles";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 
-export default function HeroSection() {
+interface HeroSectionProps {
+  onMissionSelect?: (id: string) => void;
+}
+
+export default function HeroSection({ onMissionSelect }: HeroSectionProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end start"]
-  });
+  const imageWrapperRef = useRef<HTMLDivElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null);
+  const textRef = useRef<HTMLHeadingElement>(null);
+  const subtextRef = useRef<HTMLDivElement>(null);
+  const overlayRef = useRef<HTMLDivElement>(null);
 
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
 
-  const scrollToMissions = () => {
-    const missionsSection = document.getElementById("missions");
-    if (missionsSection) {
-      missionsSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: "top top",
+        end: "+=200%", // Pin for 200% of viewport height
+        scrub: 1.5, // Smooth scrubbing
+        pin: true,
+      }
+    });
+
+    // Zoom the image dramatically and darken it
+    tl.to(imageRef.current, {
+      scale: 1.8,
+      transformOrigin: "center center",
+      ease: "power2.inOut"
+    }, 0);
+
+    tl.to(overlayRef.current, {
+      opacity: 0.9,
+      ease: "power2.inOut"
+    }, 0);
+
+    // Text spreads / fades and moves up
+    tl.to(textRef.current, {
+      scale: 1.3,
+      opacity: 0,
+      y: -150,
+      ease: "power2.inOut"
+    }, 0);
+
+    tl.to(subtextRef.current, {
+      opacity: 0,
+      y: 100,
+      ease: "power2.inOut"
+    }, 0);
+
+  }, { scope: containerRef });
 
   return (
-    <section 
-      ref={containerRef} 
-      className="relative h-screen w-full flex items-center justify-center overflow-hidden"
-    >
-      {/* Layer 0: Background Grid */}
-      <div className="absolute inset-0">
-        <InteractiveGridPattern 
-          className="opacity-30 [mask-image:radial-gradient(ellipse_at_center,white,transparent_70%)]" 
+    <section ref={containerRef} className="relative w-full h-screen bg-black overflow-hidden flex items-center justify-center">
+      {/* Cinematic Background Image */}
+      <div 
+        ref={imageWrapperRef}
+        className="absolute inset-0 w-full h-full will-change-transform"
+      >
+        <img 
+          ref={imageRef}
+          src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2500&auto=format&fit=crop" 
+          alt="Cinematic AI Robot" 
+          className="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-[2000ms] cursor-default"
         />
+        {/* Film grain and dark overlay */}
+        <div className="absolute inset-0 bg-[url('https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png')] opacity-20 mix-blend-overlay pointer-events-none" />
+        <div ref={overlayRef} className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black opacity-60 pointer-events-none" />
       </div>
-      
-      {/* Layer 1: Particles */}
-      <Particles 
-        className="opacity-50" 
-        color="#00D4FF" 
-        quantity={100}
-        ease={80}
-      />
-      
-      {/* Layer 2: Radial Gradient Overlay */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(10,10,10,0.8)_100%)]" />
-      
-      {/* Layer 3: Main Content */}
-      <motion.div 
-        style={{ y, opacity, scale }}
-        className="relative z-10 flex flex-col items-center"
-      >
-        {/* Cockpit Frame */}
-        <div className="relative border border-white/10 bg-black/60 backdrop-blur-md p-8 md:p-16 rounded-2xl">
-          {/* Corner Accents */}
-          <div className="absolute -top-px -left-px w-8 h-8 border-l-2 border-t-2 border-primary" />
-          <div className="absolute -top-px -right-px w-8 h-8 border-r-2 border-t-2 border-primary" />
-          <div className="absolute -bottom-px -left-px w-8 h-8 border-l-2 border-b-2 border-primary" />
-          <div className="absolute -bottom-px -right-px w-8 h-8 border-r-2 border-b-2 border-primary" />
-          
-          {/* Title */}
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-white text-center mb-6"
-          >
-            JOEL SHIBU
-          </motion.h1>
-          
-          {/* Subtitle / Role */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="font-mono text-sm md:text-base mb-8 space-y-2 text-center"
-          >
-            <p className="text-primary">&gt; AI SYSTEMS ENGINEER_</p>
-            <p className="text-info">&gt; HEALTHCARE AI SPECIALIST_</p>
-            <p className="text-warning">&gt; AUTONOMOUS SYSTEMS PILOT_</p>
-          </motion.div>
 
-          {/* Tagline */}
-          <motion.p
-            initial={{ opacity: 0, filter: "blur(10px)" }}
-            animate={{ opacity: 1, filter: "blur(0px)" }}
-            transition={{ duration: 1, delay: 1 }}
-            className="text-muted text-lg md:text-xl max-w-lg text-center mb-12"
-          >
-            Building Next-Generation AI Systems. Advancing Agentic Capabilities.
-          </motion.p>
-
-          {/* CTA Button */}
-          <motion.button
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 1.5 }}
-            whileHover={{ 
-              scale: 1.05, 
-              boxShadow: "0 0 30px rgba(0, 255, 136, 0.4)" 
-            }}
-            whileTap={{ scale: 0.95 }}
-            onClick={scrollToMissions}
-            className="px-8 py-4 bg-primary/10 border border-primary text-primary font-mono text-sm uppercase tracking-widest rounded transition-all hover:bg-primary/20"
-          >
-            [ VIEW MISSIONS ]
-          </motion.button>
+      {/* Foreground Typography */}
+      <div className="relative z-10 text-center pointer-events-none mix-blend-exclusion">
+        <h1 ref={textRef} className="text-[12vw] font-black tracking-tighter text-white leading-[0.8] whitespace-nowrap will-change-transform">
+          JOEL<br/>SHIBU
+        </h1>
+        <div ref={subtextRef} className="mt-8 flex flex-col items-center will-change-transform">
+          <p className="font-mono text-xl md:text-2xl tracking-[0.5em] text-[#00FF88]">AI OPERATIVE</p>
+          <div className="w-px h-32 bg-gradient-to-b from-[#00FF88] to-transparent mt-8" />
+          <p className="font-mono text-xs text-white/50 tracking-widest mt-4">SCROLL TO INITIATE</p>
         </div>
-      </motion.div>
-
-      {/* Scan Line Effect */}
-      <div className="scan-line" />
-      
-      {/* Scroll Indicator */}
-      <motion.div 
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 1.5, repeat: Infinity }}
-      >
-        <div className="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center pt-2">
-          <div className="w-1 h-2 bg-primary rounded-full" />
-        </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

@@ -2,45 +2,48 @@
 
 import { useState, useEffect } from "react";
 import { registerGSAP } from "@/lib/animations/gsap-setup";
-import BootSequenceLoader from "@/components/BootSequenceLoader";
 import HeroSection from "@/components/sections/HeroSection";
 import MissionSelect from "@/components/sections/MissionSelect";
+import MissionBriefing from "@/components/sections/MissionBriefing";
 import SkillsSection from "@/components/sections/SkillsSection";
+import AboutSection from "@/components/sections/AboutSection";
+import ContactSection from "@/components/sections/ContactSection";
+import AchievementsSection from "@/components/sections/AchievementsSection";
 
 export default function Home() {
-  const [bootComplete, setBootComplete] = useState(false);
+  const [selectedMission, setSelectedMission] = useState<string | null>(null);
 
   useEffect(() => {
     registerGSAP();
   }, []);
 
+  const handleMissionSelect = (missionId: string) => {
+    setSelectedMission(missionId);
+  };
+
+  const handleBack = () => {
+    setSelectedMission(null);
+    setTimeout(() => {
+      const el = document.getElementById("missions");
+      if (el) {
+        el.scrollIntoView({ behavior: "instant" });
+      }
+    }, 100);
+  };
+
   return (
     <main className="relative bg-background min-h-screen selection:bg-primary/30 selection:text-primary">
-      {/* Boot Sequence */}
-      {(!bootComplete) && (
-        <BootSequenceLoader onComplete={() => setBootComplete(true)} />
-      )}
-
-      {/* Main Content */}
-      {bootComplete && (
-        <div id="smooth-wrapper" className="relative z-10 w-full">
-          <div id="smooth-content">
-            <HeroSection />
-            
-            <MissionSelect />
-
-            {/* More sections will be added here */}
-            <SkillsSection />
-
-            <section className="min-h-[50vh] flex items-center justify-center border-t border-white/5">
-              <p className="font-mono text-muted">[ABOUT DATA LOADING]</p>
-            </section>
-
-            <section className="min-h-[50vh] flex items-center justify-center border-t border-white/5">
-              <p className="font-mono text-muted">[CONTACT LINK ESTABLISHING]</p>
-            </section>
-          </div>
-        </div>
+      {selectedMission ? (
+        <MissionBriefing missionId={selectedMission} onBack={handleBack} />
+      ) : (
+        <>
+          <HeroSection onMissionSelect={handleMissionSelect} />
+          <MissionSelect onMissionSelect={handleMissionSelect} />
+          <SkillsSection />
+          <AboutSection />
+          <ContactSection />
+          <AchievementsSection />
+        </>
       )}
     </main>
   );
