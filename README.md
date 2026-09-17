@@ -80,8 +80,8 @@
 ### ✦ ENGINEERING METRICS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Joel-Shibu&show_icons=true&theme=transparent&hide_border=true&title_color=111111&text_color=333333&icon_color=666666&bg_color=ffffff&rank_icon=github" height="160" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Joel-Shibu&layout=compact&theme=transparent&hide_border=true&title_color=111111&text_color=333333" height="160" alt="Top Languages" />
+  <img src="https://github-stats-extended.vercel.app/api?username=Joel-Shibu&show_icons=true&theme=transparent&hide_border=true&title_color=111111&text_color=333333&icon_color=666666&bg_color=ffffff&rank_icon=github" height="160" alt="GitHub Stats" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Joel-Shibu&layout=compact&theme=transparent&hide_border=true&title_color=111111&text_color=333333" height="160" alt="Top Languages" />
 </div>
 
 <br/>
