@@ -15,7 +15,7 @@
     &nbsp;&nbsp;︱&nbsp;&nbsp;
     <a href="https://linkedin.com/in/joel-shibu-b6bb54352"><b>LINKEDIN</b></a>
     &nbsp;&nbsp;︱&nbsp;&nbsp;
-    <a href="mailto:joelshibuadoor@gmail.com"><b>EMAIL</b></a>
+    <a href="mailto:er.joelshibu@gmail.com"><b>EMAIL</b></a>
   </p>
 </div>
 
@@ -36,7 +36,6 @@ I work across **AI/ML, full-stack engineering, autonomous systems, and agentic A
 <td width="50%" valign="top">
 
 <h3>NeuroSight</h3>
-
 <b>Privacy-Focused Neurological Screening Research</b>
 
 <p>
@@ -46,7 +45,6 @@ Eye-movement analysis with browser-based machine learning inference, designed ar
 <code>TensorFlow.js</code> <code>Computer Vision</code> <code>React</code> <code>FastAPI</code>
 
 <br/><br/>
-
 <a href="https://github.com/MedBotix/NeuroSight">→ View Repository</a>
 
 </td>
@@ -54,7 +52,6 @@ Eye-movement analysis with browser-based machine learning inference, designed ar
 <td width="50%" valign="top">
 
 <h3>RESP-AI</h3>
-
 <b>Real-Time Acoustic Respiratory Risk Assessment</b>
 
 <p>
@@ -64,7 +61,6 @@ Real-time respiratory audio analysis using a two-stage ML pipeline and live WebS
 <code>PyTorch</code> <code>CNN</code> <code>WebSockets</code> <code>Flutter</code>
 
 <br/><br/>
-
 <a href="https://github.com/MedTechHealth/RESP-AI">→ View Repository</a>
 
 </td>
@@ -74,7 +70,6 @@ Real-time respiratory audio analysis using a two-stage ML pipeline and live WebS
 <td width="50%" valign="top">
 
 <h3>AirGuardian</h3>
-
 <b>Autonomous Indoor Air-Quality Drone</b>
 
 <p>
@@ -88,7 +83,6 @@ Indoor drone system combining environmental sensing, optical-flow navigation, em
 <td width="50%" valign="top">
 
 <h3>OceanEmbed</h3>
-
 <b>Scientific ML for Ocean Intelligence</b>
 
 <p>
@@ -98,7 +92,6 @@ Deep-learning framework for reconstructing subsurface ocean temperature from sat
 <code>PyTorch</code> <code>ConvLSTM</code> <code>Geospatial AI</code> <code>FastAPI</code>
 
 <br/><br/>
-
 <a href="https://github.com/ER-ROR404/oceanXis">→ View Repository</a>
 
 </td>
@@ -108,9 +101,70 @@ Deep-learning framework for reconstructing subsurface ocean temperature from sat
 <td width="50%" valign="top">
 
 <h3>YUKTHI</h3>
-
 <b>Intelligent Chiller Energy & Equipment Monitoring</b>
 
+<p>
+Contextual energy modelling with residual anomaly detection, persistence analysis, and explainable predictions.
+</p>
+
+<code>CatBoost</code> <code>SHAP</code> <code>Time-Series ML</code> <code>Python</code>
+
+<br/><br/>
+<a href="https://github.com/ER-ROR404/yukthi">→ View Repository</a>
+
+</td>
+
+<td width="50%" valign="top">
+
+<h3>Interactive AI Portfolio</h3>
+<b>3D Web & Motion Engineering</b>
+
+<p>
+Interactive portfolio exploring 3D interfaces, motion systems, and modern web engineering.
+</p>
+
+<code>Next.js</code> <code>React</code> <code>Three.js</code> <code>GSAP</code>
+
+<br/><br/>
+<a href="https://github.com/Joel-Shibu/portfolio-site">→ View Repository</a>
+
+</td>
+</tr>
+</table>
+
+---
+
+### ✦ TECHNICAL STACK
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,opencv,ts,react,nextjs,nodejs,fastapi,docker,kubernetes,flutter,tailwind,arduino,cpp&perline=8&theme=light" alt="Technical Stack" />
+
+<br/><br/>
+
+<img src="https://skillicons.dev/icons?i=git,github,linux,vercel,gcp,postgresql,sqlite&perline=7&theme=light" alt="Engineering Stack" />
+
+</div>
+
+---
+
+### ✦ CURRENTLY EXPLORING
+
+`Agentic AI` · `LLM Engineering` · `Multi-Agent Systems` · `Multimodal AI` · `Production ML` · `Healthcare AI` · `Autonomous Robotics`
+
+---
+
+### ✦ BUILDING PHILOSOPHY
+
+> **A model is only one part of an intelligent system.**
+
+I focus on the complete path from data and models to APIs, interfaces, deployment, reliability, and real-world usability.
+
+<div align="center">
+  <br/>
+  <i>Building intelligent systems, one layer at a time.</i>
+  <br/><br/>
+</div>
 <p>
 Contextual energy modelling with residual anomaly detection, persistence analysis, and explainable predictions.
 </p>
