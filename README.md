@@ -1,36 +1,93 @@
 <div align="center">
   <br/>
-  <br/>
 
-  <h1 align="center" style="font-size: 3rem; font-weight: 800; letter-spacing: 2px;">
-    J O E L &nbsp;&nbsp; S H I B U
-  </h1>
-  
-  <p align="center" style="font-size: 1.2rem; color: #555; text-transform: uppercase; letter-spacing: 1px;">
-    <strong>AI Engineer &nbsp; &middot; &nbsp; Full-Stack Developer</strong>
+  <h1>J O E L &nbsp;&nbsp; S H I B U</h1>
+
+  <p><strong>AI Generalist &nbsp;·&nbsp; Full-Stack Developer</strong></p>
+
+  <p>
+    Building AI systems that move from research ideas to real-world applications —
+    from machine learning and intelligent agents to production backends and interactive interfaces.
   </p>
 
-  <p align="center" style="font-size: 1.1rem; max-width: 600px; margin: 0 auto; color: #666;">
-    Building scalable artificial intelligence systems, real-time machine learning pipelines, and elegant, high-performance user interfaces.
+  <p>
+    <a href="https://portfolio-site-self-eta.vercel.app"><b>PORTFOLIO</b></a>
+    &nbsp;&nbsp;︱&nbsp;&nbsp;
+    <a href="https://linkedin.com/in/joel-shibu-b6bb54352"><b>LINKEDIN</b></a>
+    &nbsp;&nbsp;︱&nbsp;&nbsp;
+    <a href="mailto:joelshibuadoor@gmail.com"><b>EMAIL</b></a>
   </p>
-
-  <br />
-
-  <p align="center">
-    <a href="https://portfolio-site-self-eta.vercel.app" style="text-decoration: none; color: inherit;"><b>PORTFOLIO</b></a> &nbsp;&nbsp;&nbsp;︱&nbsp;&nbsp;&nbsp; 
-    <a href="https://linkedin.com/in/joel-shibu-b6bb54352" style="text-decoration: none; color: inherit;"><b>LINKEDIN</b></a> &nbsp;&nbsp;&nbsp;︱&nbsp;&nbsp;&nbsp; 
-    <a href="mailto:joelshibuadoor@gmail.com" style="text-decoration: none; color: inherit;"><b>EMAIL</b></a>
-  </p>
-
-  <br/>
-  <br/>
 </div>
 
-### ✦ SELECTED WORK ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+---
 
-<table width="100%" style="border-collapse: separate; border-spacing: 15px; border: none;">
-  <tr style="border: none;">
-    <td width="50%" valign="top" style="border: 1px solid #eaeaea; padding: 24px; border-radius: 12px; background-color: #fafbfc;">
+### ✦ WHAT I BUILD
+
+I work across **AI/ML, full-stack engineering, autonomous systems, and agentic AI**.
+
+My approach is simple:
+
+**Research → Model → Backend → Interface → Deployment → Real-World System**
+
+---
+
+### ✦ SELECTED WORK
+
+| Project | Focus | Technologies |
+|---|---|---|
+| **[NeuroSight](https://github.com/MedBotix/NeuroSight)** | Privacy-focused neurological screening research using eye-movement analysis and browser-based ML inference. | TensorFlow.js · Computer Vision · React · FastAPI |
+| **[RESP-AI](https://github.com/MedTechHealth/RESP-AI)** | Real-time acoustic respiratory risk assessment using a two-stage ML pipeline and live audio streaming. | PyTorch · CNN · WebSockets · Python · Flutter |
+| **AirGuardian** | Indoor autonomous drone system for spatial air-quality monitoring using environmental sensing and indoor navigation. | ESP32 · Sensors · Optical Flow · Python · Robotics |
+| **[OceanEmbed](https://github.com/ER-ROR404/oceanXis)** | Scientific ML framework for reconstructing subsurface ocean temperature from satellite observations with uncertainty estimation. | PyTorch · ConvLSTM · Geospatial AI · FastAPI |
+| **YUKTHI** | Contextual chiller energy modelling with residual anomaly detection and explainable predictions. | CatBoost · SHAP · Python · Time-Series ML |
+| **[Interactive AI Portfolio](https://github.com/Joel-Shibu/portfolio-site)** | Interactive portfolio exploring 3D interfaces, motion, and modern web engineering. | Next.js · React · Three.js · GSAP · TypeScript |
+
+---
+
+### ✦ TECHNICAL STACK
+
+**AI / Machine Learning**  
+Python · PyTorch · TensorFlow · TensorFlow.js · OpenCV · CNNs · Computer Vision · Time-Series ML · Anomaly Detection
+
+**Agentic AI**  
+LLM Integration · Prompt Engineering · Tool Use · Multi-Agent Systems · AI Workflows
+
+**Engineering**  
+FastAPI · WebSockets · Docker · Kubernetes · MLOps · CI/CD · REST APIs
+
+**Full-Stack**  
+React · Next.js · Node.js · TypeScript · Flutter · Tailwind CSS
+
+**Robotics / Edge**  
+ESP32 · Arduino · Sensor Fusion · Optical Flow · Autonomous Systems
+
+---
+
+### ✦ CURRENTLY EXPLORING
+
+- Agentic AI and reliable tool-using systems
+- LLM engineering and multi-agent architectures
+- Multimodal AI
+- Production ML and MLOps
+- Healthcare AI
+- Autonomous robotics
+- AI systems that connect models with real-world software and hardware
+
+---
+
+### ✦ BUILDING PHILOSOPHY
+
+> **A model is only one part of an intelligent system.**
+
+I focus on the complete path from data and models to APIs, interfaces, deployment, reliability, and real-world usability.
+
+<div align="center">
+  <br/>
+  <i>Building intelligent systems, one layer at a time.</i>
+  <br/><br/>
+</div>
+
+After making the change, do not just tell me what you would change — actually edit README.md, commit it, and report the commit SHA.    <td width="50%" valign="top" style="border: 1px solid #eaeaea; padding: 24px; border-radius: 12px; background-color: #fafbfc;">
       <h3 style="margin-top: 0; font-size: 1.4em;">NeuroSight</h3>
       <p style="color: #586069; margin-top: -10px;"><i>Privacy-First Neurological Screening AI</i></p>
       <p>AI-powered tool for dementia detection through eye movement analysis. Deep learning models run entirely in-browser with zero server data retention.</p>
