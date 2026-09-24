@@ -1,27 +1,21 @@
 <div align="center">
-  <br/>
 
-  <h1>J O E L &nbsp;&nbsp; S H I B U</h1>
+# J O E L &nbsp;&nbsp; S H I B U
 
-  <p><strong>AI Generalist &nbsp;·&nbsp; Full-Stack Developer</strong></p>
+**AI Generalist · Full-Stack Developer**
 
-  <p>
-    Building AI systems that move from research ideas to real-world applications —
-    from machine learning and intelligent agents to production backends and interactive interfaces.
-  </p>
+Building AI systems that move from research ideas to real-world applications —
+from machine learning and intelligent agents to production backends and interactive interfaces.
 
-  <p>
-    <a href="https://portfolio-site-self-eta.vercel.app"><b>PORTFOLIO</b></a>
-    &nbsp;&nbsp;︱&nbsp;&nbsp;
-    <a href="https://linkedin.com/in/joel-shibu-b6bb54352"><b>LINKEDIN</b></a>
-    &nbsp;&nbsp;︱&nbsp;&nbsp;
-    <a href="mailto:er.joelshibu@gmail.com"><b>EMAIL</b></a>
-  </p>
+[**PORTFOLIO**](https://portfolio-site-self-eta.vercel.app) ·
+[**LINKEDIN**](https://linkedin.com/in/joel-shibu-b6bb54352) ·
+[**EMAIL**](mailto:er.joelshibu@gmail.com)
+
 </div>
 
 ---
 
-### ✦ WHAT I BUILD
+## ✦ WHAT I BUILD
 
 I work across **AI/ML, full-stack engineering, autonomous systems, and agentic AI**.
 
@@ -29,39 +23,35 @@ I work across **AI/ML, full-stack engineering, autonomous systems, and agentic A
 
 ---
 
-### ✦ SELECTED WORK
+## ✦ SELECTED WORK
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-<h3>NeuroSight</h3>
-<b>Privacy-Focused Neurological Screening Research</b>
+### NeuroSight
 
-<p>
+**Privacy-Focused Neurological Screening Research**
+
 Eye-movement analysis with browser-based machine learning inference, designed around privacy-focused processing.
-</p>
 
-<code>TensorFlow.js</code> <code>Computer Vision</code> <code>React</code> <code>FastAPI</code>
+`TensorFlow.js` `Computer Vision` `React` `FastAPI`
 
-<br/><br/>
-<a href="https://github.com/MedBotix/NeuroSight">→ View Repository</a>
+**[→ View Repository](https://github.com/MedBotix/NeuroSight)**
 
 </td>
 
 <td width="50%" valign="top">
 
-<h3>RESP-AI</h3>
-<b>Real-Time Acoustic Respiratory Risk Assessment</b>
+### RESP-AI
 
-<p>
+**Real-Time Acoustic Respiratory Risk Assessment**
+
 Real-time respiratory audio analysis using a two-stage ML pipeline and live WebSocket streaming.
-</p>
 
-<code>PyTorch</code> <code>CNN</code> <code>WebSockets</code> <code>Flutter</code>
+`PyTorch` `CNN` `WebSockets` `Flutter`
 
-<br/><br/>
-<a href="https://github.com/MedTechHealth/RESP-AI">→ View Repository</a>
+**[→ View Repository](https://github.com/MedTechHealth/RESP-AI)**
 
 </td>
 </tr>
@@ -69,30 +59,27 @@ Real-time respiratory audio analysis using a two-stage ML pipeline and live WebS
 <tr>
 <td width="50%" valign="top">
 
-<h3>AirGuardian</h3>
-<b>Autonomous Indoor Air-Quality Drone</b>
+### AirGuardian
 
-<p>
+**Autonomous Indoor Air-Quality Drone**
+
 Indoor drone system combining environmental sensing, optical-flow navigation, embedded systems, and spatial air-quality intelligence.
-</p>
 
-<code>ESP32</code> <code>Sensors</code> <code>Optical Flow</code> <code>Python</code>
+`ESP32` `Sensors` `Optical Flow` `Python`
 
 </td>
 
 <td width="50%" valign="top">
 
-<h3>OceanEmbed</h3>
-<b>Scientific ML for Ocean Intelligence</b>
+### OceanEmbed
 
-<p>
+**Scientific ML for Ocean Intelligence**
+
 Deep-learning framework for reconstructing subsurface ocean temperature from satellite observations with uncertainty estimation.
-</p>
 
-<code>PyTorch</code> <code>ConvLSTM</code> <code>Geospatial AI</code> <code>FastAPI</code>
+`PyTorch` `ConvLSTM` `Geospatial AI` `FastAPI`
 
-<br/><br/>
-<a href="https://github.com/ER-ROR404/oceanXis">→ View Repository</a>
+**[→ View Repository](https://github.com/ER-ROR404/oceanXis)**
 
 </td>
 </tr>
@@ -100,12 +87,79 @@ Deep-learning framework for reconstructing subsurface ocean temperature from sat
 <tr>
 <td width="50%" valign="top">
 
-<h3>YUKTHI</h3>
-<b>Intelligent Chiller Energy & Equipment Monitoring</b>
+### YUKTHI
 
-<p>
+**Intelligent Chiller Energy & Equipment Monitoring**
+
 Contextual energy modelling with residual anomaly detection, persistence analysis, and explainable predictions.
-</p>
+
+`CatBoost` `SHAP` `Time-Series ML` `Python`
+
+**[→ View Repository](https://github.com/ER-ROR404/yukthi)**
+
+</td>
+
+<td width="50%" valign="top">
+
+### Interactive AI Portfolio
+
+**3D Web & Motion Engineering**
+
+Interactive portfolio exploring 3D interfaces, motion systems, and modern web engineering.
+
+`Next.js` `React` `Three.js` `GSAP`
+
+**[→ View Repository](https://github.com/Joel-Shibu/portfolio-site)**
+
+</td>
+</tr>
+</table>
+
+---
+
+## ✦ TECHNICAL STACK
+
+<div align="center">
+
+### AI · ML · Data
+
+<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,opencv&perline=4&theme=light" alt="AI and Machine Learning technologies" />
+
+<br/>
+
+### Web · Backend · Mobile
+
+<img src="https://skillicons.dev/icons?i=typescript,react,nextjs,nodejs,fastapi,flutter,tailwind&perline=7&theme=light" alt="Web, backend and mobile technologies" />
+
+<br/>
+
+### Infrastructure · Systems · Robotics
+
+<img src="https://skillicons.dev/icons?i=docker,kubernetes,git,github,linux,gcp,arduino,cpp&perline=8&theme=light" alt="Infrastructure, systems and robotics technologies" />
+
+</div>
+
+---
+
+## ✦ CURRENTLY EXPLORING
+
+`Agentic AI` · `LLM Engineering` · `Multi-Agent Systems` · `Multimodal AI` · `Production ML` · `Healthcare AI` · `Autonomous Robotics`
+
+---
+
+## ✦ BUILDING PHILOSOPHY
+
+> **A model is only one part of an intelligent system.**
+
+I focus on the complete path from data and models to APIs, interfaces, deployment, reliability, and real-world usability.
+
+<div align="center">
+
+<br/>
+
+*Building intelligent systems, one layer at a time.*
+
+</div></p>
 
 <code>CatBoost</code> <code>SHAP</code> <code>Time-Series ML</code> <code>Python</code>
 
