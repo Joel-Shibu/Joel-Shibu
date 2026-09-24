@@ -25,53 +25,153 @@
 
 I work across **AI/ML, full-stack engineering, autonomous systems, and agentic AI**.
 
-My approach is simple:
-
 **Research → Model → Backend → Interface → Deployment → Real-World System**
 
 ---
 
 ### ✦ SELECTED WORK
 
-| Project | Focus | Technologies |
-|---|---|---|
-| **[NeuroSight](https://github.com/MedBotix/NeuroSight)** | Privacy-focused neurological screening research using eye-movement analysis and browser-based ML inference. | TensorFlow.js · Computer Vision · React · FastAPI |
-| **[RESP-AI](https://github.com/MedTechHealth/RESP-AI)** | Real-time acoustic respiratory risk assessment using a two-stage ML pipeline and live audio streaming. | PyTorch · CNN · WebSockets · Python · Flutter |
-| **AirGuardian** | Indoor autonomous drone system for spatial air-quality monitoring using environmental sensing and indoor navigation. | ESP32 · Sensors · Optical Flow · Python · Robotics |
-| **[OceanEmbed](https://github.com/ER-ROR404/oceanXis)** | Scientific ML framework for reconstructing subsurface ocean temperature from satellite observations with uncertainty estimation. | PyTorch · ConvLSTM · Geospatial AI · FastAPI |
-| **YUKTHI** | Contextual chiller energy modelling with residual anomaly detection and explainable predictions. | CatBoost · SHAP · Python · Time-Series ML |
-| **[Interactive AI Portfolio](https://github.com/Joel-Shibu/portfolio-site)** | Interactive portfolio exploring 3D interfaces, motion, and modern web engineering. | Next.js · React · Three.js · GSAP · TypeScript |
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<h3>NeuroSight</h3>
+
+<b>Privacy-Focused Neurological Screening Research</b>
+
+<p>
+Eye-movement analysis with browser-based machine learning inference, designed around privacy-focused processing.
+</p>
+
+<code>TensorFlow.js</code> <code>Computer Vision</code> <code>React</code> <code>FastAPI</code>
+
+<br/><br/>
+
+<a href="https://github.com/MedBotix/NeuroSight">→ View Repository</a>
+
+</td>
+
+<td width="50%" valign="top">
+
+<h3>RESP-AI</h3>
+
+<b>Real-Time Acoustic Respiratory Risk Assessment</b>
+
+<p>
+Real-time respiratory audio analysis using a two-stage ML pipeline and live WebSocket streaming.
+</p>
+
+<code>PyTorch</code> <code>CNN</code> <code>WebSockets</code> <code>Flutter</code>
+
+<br/><br/>
+
+<a href="https://github.com/MedTechHealth/RESP-AI">→ View Repository</a>
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<h3>AirGuardian</h3>
+
+<b>Autonomous Indoor Air-Quality Drone</b>
+
+<p>
+Indoor drone system combining environmental sensing, optical-flow navigation, embedded systems, and spatial air-quality intelligence.
+</p>
+
+<code>ESP32</code> <code>Sensors</code> <code>Optical Flow</code> <code>Python</code>
+
+</td>
+
+<td width="50%" valign="top">
+
+<h3>OceanEmbed</h3>
+
+<b>Scientific ML for Ocean Intelligence</b>
+
+<p>
+Deep-learning framework for reconstructing subsurface ocean temperature from satellite observations with uncertainty estimation.
+</p>
+
+<code>PyTorch</code> <code>ConvLSTM</code> <code>Geospatial AI</code> <code>FastAPI</code>
+
+<br/><br/>
+
+<a href="https://github.com/ER-ROR404/oceanXis">→ View Repository</a>
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<h3>YUKTHI</h3>
+
+<b>Intelligent Chiller Energy & Equipment Monitoring</b>
+
+<p>
+Contextual energy modelling with residual anomaly detection, persistence analysis, and explainable predictions.
+</p>
+
+<code>CatBoost</code> <code>SHAP</code> <code>Time-Series ML</code> <code>Python</code>
+
+<br/><br/>
+
+<a href="https://github.com/ER-ROR404/yukthi">→ View Repository</a>
+
+</td>
+
+<td width="50%" valign="top">
+
+<h3>Interactive AI Portfolio</h3>
+
+<b>3D Web & Motion Engineering</b>
+
+<p>
+Interactive portfolio exploring 3D interfaces, motion systems, and modern web engineering.
+</p>
+
+<code>Next.js</code> <code>React</code> <code>Three.js</code> <code>GSAP</code>
+
+<br/><br/>
+
+<a href="https://github.com/Joel-Shibu/portfolio-site">→ View Repository</a>
+
+</td>
+</tr>
+</table>
 
 ---
 
 ### ✦ TECHNICAL STACK
 
-**AI / Machine Learning**  
-Python · PyTorch · TensorFlow · TensorFlow.js · OpenCV · CNNs · Computer Vision · Time-Series ML · Anomaly Detection
+**AI / Machine Learning**
 
-**Agentic AI**  
-LLM Integration · Prompt Engineering · Tool Use · Multi-Agent Systems · AI Workflows
+`Python` `PyTorch` `TensorFlow` `TensorFlow.js` `OpenCV` `CNNs` `Computer Vision` `Time-Series ML` `Anomaly Detection`
 
-**Engineering**  
-FastAPI · WebSockets · Docker · Kubernetes · MLOps · CI/CD · REST APIs
+**Agentic AI**
 
-**Full-Stack**  
-React · Next.js · Node.js · TypeScript · Flutter · Tailwind CSS
+`LLM Integration` `Prompt Engineering` `Tool Use` `Multi-Agent Systems` `AI Workflows`
 
-**Robotics / Edge**  
-ESP32 · Arduino · Sensor Fusion · Optical Flow · Autonomous Systems
+**Engineering**
+
+`FastAPI` `WebSockets` `Docker` `Kubernetes` `MLOps` `CI/CD` `REST APIs`
+
+**Full-Stack**
+
+`React` `Next.js` `Node.js` `TypeScript` `Flutter` `Tailwind CSS`
+
+**Robotics / Edge**
+
+`ESP32` `Arduino` `Sensor Fusion` `Optical Flow` `Autonomous Systems`
 
 ---
 
 ### ✦ CURRENTLY EXPLORING
 
-- Agentic AI and reliable tool-using systems
-- LLM engineering and multi-agent architectures
-- Multimodal AI
-- Production ML and MLOps
-- Healthcare AI
-- Autonomous robotics
-- AI systems that connect models with real-world software and hardware
+`Agentic AI` · `LLM Engineering` · `Multi-Agent Systems` · `Multimodal AI` · `Production ML` · `Healthcare AI` · `Autonomous Robotics`
 
 ---
 
@@ -85,65 +185,4 @@ I focus on the complete path from data and models to APIs, interfaces, deploymen
   <br/>
   <i>Building intelligent systems, one layer at a time.</i>
   <br/><br/>
-</div>
-
-After making the change, do not just tell me what you would change — actually edit README.md, commit it, and report the commit SHA.    <td width="50%" valign="top" style="border: 1px solid #eaeaea; padding: 24px; border-radius: 12px; background-color: #fafbfc;">
-      <h3 style="margin-top: 0; font-size: 1.4em;">NeuroSight</h3>
-      <p style="color: #586069; margin-top: -10px;"><i>Privacy-First Neurological Screening AI</i></p>
-      <p>AI-powered tool for dementia detection through eye movement analysis. Deep learning models run entirely in-browser with zero server data retention.</p>
-      <p><code>TensorFlow.js</code> <code>React</code> <code>FastAPI</code></p>
-      <b>Performance:</b> 94% Accuracy • 47ms Latency<br/><br/>
-      <a href="https://github.com/MedBotix/NeuroSight">→ View Architecture</a>
-    </td>
-    <td width="50%" valign="top" style="border: 1px solid #eaeaea; padding: 24px; border-radius: 12px; background-color: #fafbfc;">
-      <h3 style="margin-top: 0; font-size: 1.4em;">RESP-AI</h3>
-      <p style="color: #586069; margin-top: -10px;"><i>Real-Time Respiratory Monitoring</i></p>
-      <p>Cross-platform mobile application utilizing CNN-based acoustic analysis for respiratory health tracking with live WebSockets streaming capability.</p>
-      <p><code>Flutter</code> <code>Python</code> <code>CNN</code></p>
-      <b>Performance:</b> 97.3% Accuracy • 94ms Latency<br/><br/>
-      <a href="https://github.com/MedTechHealth/RESP-AI">→ View Architecture</a>
-    </td>
-  </tr>
-  <tr style="border: none;">
-    <td width="50%" valign="top" style="border: 1px solid #eaeaea; padding: 24px; border-radius: 12px; background-color: #fafbfc;">
-      <h3 style="margin-top: 0; font-size: 1.4em;">AirGuardian</h3>
-      <p style="color: #586069; margin-top: -10px;"><i>Autonomous Drone Intelligence</i></p>
-      <p>Autonomous drone system for indoor air quality monitoring. Integrated IoT gas leak sensors with OpenCV navigation algorithms for real-time risk assessment.</p>
-      <p><code>Python</code> <code>OpenCV</code> <code>ESP32</code></p>
-      <b>Performance:</b> 500m² Coverage • 8-Sensor Fusion
-    </td>
-    <td width="50%" valign="top" style="border: 1px solid #eaeaea; padding: 24px; border-radius: 12px; background-color: #fafbfc;">
-      <h3 style="margin-top: 0; font-size: 1.4em;">AI & Robotics</h3>
-      <p style="color: #586069; margin-top: -10px;"><i>STEM Robotics Engineering</i></p>
-      <p>Developed Python automation scripts for robotic control, built ML models for sensor predictive maintenance, and integrated PyTorch for edge decision making.</p>
-      <p><code>PyTorch</code> <code>ROS</code> <code>Python</code></p>
-      <b>Focus:</b> Automation • Predictive Maintenance
-    </td>
-  </tr>
-</table>
-
-<br/>
-
-### ✦ TECHNICAL ARCHITECTURE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-<div align="center">
-  <br/>
-  <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,cpp,ts,react,nextjs,flutter,docker,gcp,fastapi,arduino&theme=light&perline=12" alt="Tech Stack" />
-  <br/>
-</div>
-
-<br/>
-
-### ✦ ENGINEERING METRICS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-<div align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=Joel-Shibu&show_icons=true&theme=transparent&hide_border=true&title_color=111111&text_color=333333&icon_color=666666&bg_color=ffffff&rank_icon=github" height="160" alt="GitHub Stats" />
-  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Joel-Shibu&layout=compact&theme=transparent&hide_border=true&title_color=111111&text_color=333333" height="160" alt="Top Languages" />
-</div>
-
-<br/>
-<br/>
-
-<div align="center">
-  <p style="color: #888;"><i>Designing the future of intelligent systems.</i></p>
 </div>
